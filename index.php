@@ -21,9 +21,24 @@ echo var_dump($usuarios);*/
 //echo json_encode($search);
 
 // carrega um usuario usando o login e a senha
+//$usuario = new Usuario();
+//$usuario->login("user","12345");
+//echo $usuario;
+
+// criando um novo usuario 
+//$aluno = new Usuario("aluno", "@luno");
+//$aluno->insert();
+//echo $aluno;
+
+// atualiza usuario
+
 $usuario = new Usuario();
-$usuario->login("jose","1234567890");
+
+$usuario->loadById(7);
+$usuario->update("rogerio ceni", "000144");
 echo $usuario;
+
+
 
 //echo $root;
 
