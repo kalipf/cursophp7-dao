@@ -30,12 +30,16 @@ echo var_dump($usuarios);*/
 //$aluno->insert();
 //echo $aluno;
 
-// atualiza usuario
+// alterar um usuario
+//$usuario = new Usuario();
+//$usuario->loadById(7);
+//$usuario->update("rogerio ceni", "000144");
+//echo $usuario;
 
 $usuario = new Usuario();
 
-$usuario->loadById(7);
-$usuario->update("rogerio ceni", "000144");
+$usuario->loadById(6);
+$usuario->delete();
 echo $usuario;
 
 
